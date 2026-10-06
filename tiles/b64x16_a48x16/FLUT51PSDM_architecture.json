@@ -1,0 +1,1508 @@
+{
+  "creator": "Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)",
+  "modules": {
+    "FLUT51PSDM_architecture": {
+      "attributes": {
+        "CFG_SET_NORESET": 41,
+        "CFG_SELECT_AS_DATA_MUX": 40,
+        "CFG_AQ5_MUX": 39,
+        "CFG_AY5_MUX": 38,
+        "CFG_AQ4_MUX": 37,
+        "CFG_AY4_MUX": 36,
+        "CFG_CARRY_MUX": 35,
+        "CFG_CARRYSTART_MUX": 34,
+        "CFG_DUAL_MUX": 33,
+        "CFG_MUX4_MUX": 32,
+        "INIT_31": 31,
+        "INIT_30": 30,
+        "INIT_29": 29,
+        "INIT_28": 28,
+        "INIT_27": 27,
+        "INIT_26": 26,
+        "INIT_25": 25,
+        "INIT_24": 24,
+        "INIT_23": 23,
+        "INIT_22": 22,
+        "INIT_21": 21,
+        "INIT_20": 20,
+        "INIT_19": 19,
+        "INIT_18": 18,
+        "INIT_17": 17,
+        "INIT_16": 16,
+        "INIT_15": 15,
+        "INIT_14": 14,
+        "INIT_13": 13,
+        "INIT_12": 12,
+        "INIT_11": 11,
+        "INIT_10": 10,
+        "INIT_9": 9,
+        "INIT_8": 8,
+        "INIT_7": 7,
+        "INIT_6": 6,
+        "INIT_5": 5,
+        "INIT_4": 4,
+        "INIT_3": 3,
+        "INIT_2": 2,
+        "INIT_1": 1,
+        "BelMap": 1,
+        "FABulous": 1,
+        "dynports": 1,
+        "INIT": 0,
+        "top": 1,
+        "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:168.1-286.10"
+      },
+      "parameter_default_values": {
+        "NoConfigBits": 42
+      },
+      "ports": {
+        "A0": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "A1": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "A2": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "A3": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "A4": {
+          "direction": "input",
+          "bits": [ 6 ]
+        },
+        "AX": {
+          "direction": "input",
+          "bits": [ 7 ]
+        },
+        "Ci": {
+          "direction": "input",
+          "bits": [ 8 ]
+        },
+        "SR": {
+          "direction": "input",
+          "bits": [ 9 ]
+        },
+        "EN": {
+          "direction": "input",
+          "bits": [ 10 ]
+        },
+        "AY4": {
+          "direction": "output",
+          "bits": [ 11 ]
+        },
+        "AQ4": {
+          "direction": "output",
+          "bits": [ 12 ]
+        },
+        "AY5": {
+          "direction": "output",
+          "bits": [ 13 ]
+        },
+        "AQ5": {
+          "direction": "output",
+          "bits": [ 14 ]
+        },
+        "Co": {
+          "direction": "output",
+          "bits": [ 15 ]
+        },
+        "UserCLK": {
+          "direction": "input",
+          "bits": [ 16 ]
+        },
+        "ConfigBits": {
+          "direction": "input",
+          "bits": [ 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58 ]
+        }
+      },
+      "cells": {
+        "ff0": {
+          "hide_name": 0,
+          "type": "sync_ff",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:267.13-274.6"
+          },
+          "port_directions": {
+            "D": "input",
+            "Q": "output",
+            "clk": "input",
+            "en": "input",
+            "rst": "input",
+            "rst_value": "input"
+          },
+          "connections": {
+            "D": [ 59 ],
+            "Q": [ 12 ],
+            "clk": [ 16 ],
+            "en": [ 10 ],
+            "rst": [ 9 ],
+            "rst_value": [ 58 ]
+          }
+        },
+        "ff1": {
+          "hide_name": 0,
+          "type": "sync_ff",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:277.13-284.6"
+          },
+          "port_directions": {
+            "D": "input",
+            "Q": "output",
+            "clk": "input",
+            "en": "input",
+            "rst": "input",
+            "rst_value": "input"
+          },
+          "connections": {
+            "D": [ 60 ],
+            "Q": [ 14 ],
+            "clk": [ 16 ],
+            "en": [ 10 ],
+            "rst": [ 9 ],
+            "rst_value": [ 58 ]
+          }
+        },
+        "mux_00": {
+          "hide_name": 0,
+          "type": "mux21",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:254.11-254.50"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 61 ],
+            "B": [ 62 ],
+            "S": [ 5 ],
+            "Y": [ 63 ]
+          }
+        },
+        "mux_01": {
+          "hide_name": 0,
+          "type": "mux21",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:255.11-255.61"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 64 ],
+            "B": [ 7 ],
+            "S": [ 49 ],
+            "Y": [ 65 ]
+          }
+        },
+        "mux_02": {
+          "hide_name": 0,
+          "type": "mux21",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:256.11-256.61"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 7 ],
+            "S": [ 50 ],
+            "Y": [ 66 ]
+          }
+        },
+        "mux_03": {
+          "hide_name": 0,
+          "type": "mux21",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:257.11-257.60"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 67 ],
+            "B": [ 65 ],
+            "S": [ 66 ],
+            "Y": [ 68 ]
+          }
+        },
+        "mux_04": {
+          "hide_name": 0,
+          "type": "mux21",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:258.11-258.60"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 63 ],
+            "B": [ 68 ],
+            "S": [ 69 ],
+            "Y": [ 70 ]
+          }
+        },
+        "mux_05": {
+          "hide_name": 0,
+          "type": "mux21",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:259.11-259.67"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 8 ],
+            "B": [ 7 ],
+            "S": [ 51 ],
+            "Y": [ 71 ]
+          }
+        },
+        "mux_06": {
+          "hide_name": 0,
+          "type": "mux21",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:260.11-260.67"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 71 ],
+            "B": [ 7 ],
+            "S": [ 52 ],
+            "Y": [ 72 ]
+          }
+        },
+        "mux_07": {
+          "hide_name": 0,
+          "type": "mux21",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:261.11-261.61"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 68 ],
+            "B": [ 71 ],
+            "S": [ 70 ],
+            "Y": [ 15 ]
+          }
+        },
+        "mux_09": {
+          "hide_name": 0,
+          "type": "mux21",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:264.11-264.59"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 63 ],
+            "S": [ "1" ],
+            "Y": [ 73 ]
+          }
+        },
+        "mux_10": {
+          "hide_name": 0,
+          "type": "mux21",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:265.11-265.66"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 15 ],
+            "B": [ 73 ],
+            "S": [ 53 ],
+            "Y": [ 11 ]
+          }
+        },
+        "mux_11": {
+          "hide_name": 0,
+          "type": "mux21",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:266.11-266.65"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 73 ],
+            "B": [ 7 ],
+            "S": [ 54 ],
+            "Y": [ 59 ]
+          }
+        },
+        "mux_12": {
+          "hide_name": 0,
+          "type": "mux21",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:275.11-275.62"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 74 ],
+            "B": [ 70 ],
+            "S": [ 55 ],
+            "Y": [ 13 ]
+          }
+        },
+        "mux_13": {
+          "hide_name": 0,
+          "type": "mux21",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:276.11-276.66"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 74 ],
+            "B": [ 70 ],
+            "S": [ 56 ],
+            "Y": [ 60 ]
+          }
+        },
+        "u_lut_mem_8x4": {
+          "hide_name": 0,
+          "type": "LUT_MEM_8x4",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:234.17-249.6"
+          },
+          "port_directions": {
+            "A0": "input",
+            "A1": "input",
+            "A2": "input",
+            "SB": "input",
+            "block_SB": "output",
+            "q0": "output",
+            "q1": "output",
+            "q2": "output",
+            "q3": "output",
+            "row0": "input",
+            "row1": "input",
+            "row2": "input",
+            "row3": "input",
+            "sad": "input"
+          },
+          "connections": {
+            "A0": [ 2 ],
+            "A1": [ 3 ],
+            "A2": [ 4 ],
+            "SB": [ 6 ],
+            "block_SB": [ 69 ],
+            "q0": [ 61 ],
+            "q1": [ 62 ],
+            "q2": [ 67 ],
+            "q3": [ 64 ],
+            "row0": [ 17, 18, 19, 20, 21, 22, 23, 24 ],
+            "row1": [ 25, 26, 27, 28, 29, 30, 31, 32 ],
+            "row2": [ 33, 34, 35, 36, 37, 38, 39, 40 ],
+            "row3": [ 41, 42, 43, 44, 45, 46, 47, 48 ],
+            "sad": [ 57 ]
+          }
+        },
+        "xor_08": {
+          "hide_name": 0,
+          "type": "xor21",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": 1,
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:263.11-263.53"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 70 ],
+            "B": [ 72 ],
+            "Y": [ 74 ]
+          }
+        }
+      },
+      "netnames": {
+        "A0": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:171.16-171.18"
+          }
+        },
+        "A1": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:172.16-172.18"
+          }
+        },
+        "A2": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:173.16-173.18"
+          }
+        },
+        "A3": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:174.16-174.18"
+          }
+        },
+        "A4": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:175.16-175.18"
+          }
+        },
+        "A4_SB_block": {
+          "hide_name": 0,
+          "bits": [ 69 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:227.10-227.21"
+          }
+        },
+        "AQ4": {
+          "hide_name": 0,
+          "bits": [ 12 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:183.17-183.20"
+          }
+        },
+        "AQ4_MUX": {
+          "hide_name": 0,
+          "bits": [ 54 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:202.10-202.17"
+          }
+        },
+        "AQ5": {
+          "hide_name": 0,
+          "bits": [ 14 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:185.17-185.20"
+          }
+        },
+        "AQ5_MUX": {
+          "hide_name": 0,
+          "bits": [ 56 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:204.10-204.17"
+          }
+        },
+        "AX": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:176.16-176.18"
+          }
+        },
+        "AY4": {
+          "hide_name": 0,
+          "bits": [ 11 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:182.17-182.20"
+          }
+        },
+        "AY4_MUX": {
+          "hide_name": 0,
+          "bits": [ 53 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:201.10-201.17"
+          }
+        },
+        "AY5": {
+          "hide_name": 0,
+          "bits": [ 13 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:184.17-184.20"
+          }
+        },
+        "AY5_MUX": {
+          "hide_name": 0,
+          "bits": [ 55 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:203.10-203.17"
+          }
+        },
+        "CARRYSTART_MUX": {
+          "hide_name": 0,
+          "bits": [ 51 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:199.10-199.24"
+          }
+        },
+        "CARRY_MUX": {
+          "hide_name": 0,
+          "bits": [ 52 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:200.10-200.19"
+          }
+        },
+        "Ci": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:177.16-177.18"
+          }
+        },
+        "Co": {
+          "hide_name": 0,
+          "bits": [ 15 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:187.17-187.19"
+          }
+        },
+        "ConfigBits": {
+          "hide_name": 0,
+          "bits": [ 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58 ],
+          "attributes": {
+            "FABulous": 1,
+            "GLOBAL": 1,
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:190.58-190.68"
+          }
+        },
+        "DUAL_MUX": {
+          "hide_name": 0,
+          "bits": [ 50 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:198.10-198.18"
+          }
+        },
+        "EN": {
+          "hide_name": 0,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:180.16-180.18"
+          }
+        },
+        "MUX4_MUX": {
+          "hide_name": 0,
+          "bits": [ 49 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:197.10-197.18"
+          }
+        },
+        "SELECT_AS_DATA_MUX": {
+          "hide_name": 0,
+          "bits": [ 57 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:205.10-205.28"
+          }
+        },
+        "SET_NORESET": {
+          "hide_name": 0,
+          "bits": [ 58 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:206.10-206.21"
+          }
+        },
+        "SR": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:179.16-179.18"
+          }
+        },
+        "UserCLK": {
+          "hide_name": 0,
+          "bits": [ 16 ],
+          "attributes": {
+            "EXTERNAL": 1,
+            "FABulous": 1,
+            "SHARED_PORT": 1,
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:189.54-189.61"
+          }
+        },
+        "conn": {
+          "hide_name": 0,
+          "bits": [ 65, 66, 71, 72, 15, 74, 73, 59, 60 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:232.16-232.20"
+          }
+        },
+        "f4": {
+          "hide_name": 0,
+          "bits": [ 63 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:228.10-228.12"
+          }
+        },
+        "fg5": {
+          "hide_name": 0,
+          "bits": [ 70 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:230.10-230.13"
+          }
+        },
+        "g4": {
+          "hide_name": 0,
+          "bits": [ 68 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:229.10-229.12"
+          }
+        },
+        "init_row0": {
+          "hide_name": 0,
+          "bits": [ 17, 18, 19, 20, 21, 22, 23, 24 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:193.16-193.25"
+          }
+        },
+        "init_row1": {
+          "hide_name": 0,
+          "bits": [ 25, 26, 27, 28, 29, 30, 31, 32 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:194.16-194.25"
+          }
+        },
+        "init_row2": {
+          "hide_name": 0,
+          "bits": [ 33, 34, 35, 36, 37, 38, 39, 40 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:195.16-195.25"
+          }
+        },
+        "init_row3": {
+          "hide_name": 0,
+          "bits": [ 41, 42, 43, 44, 45, 46, 47, 48 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:196.16-196.25"
+          }
+        },
+        "q0": {
+          "hide_name": 0,
+          "bits": [ 61 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:223.10-223.12"
+          }
+        },
+        "q1": {
+          "hide_name": 0,
+          "bits": [ 62 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:224.10-224.12"
+          }
+        },
+        "q2": {
+          "hide_name": 0,
+          "bits": [ 67 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:225.10-225.12"
+          }
+        },
+        "q3": {
+          "hide_name": 0,
+          "bits": [ 64 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:226.10-226.12"
+          }
+        }
+      }
+    },
+    "LUT_MEM_8x4": {
+      "attributes": {
+        "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:15.1-77.10"
+      },
+      "ports": {
+        "A0": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "A1": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "A2": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "SB": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "sad": {
+          "direction": "input",
+          "bits": [ 6 ]
+        },
+        "row0": {
+          "direction": "input",
+          "bits": [ 7, 8, 9, 10, 11, 12, 13, 14 ]
+        },
+        "row1": {
+          "direction": "input",
+          "bits": [ 15, 16, 17, 18, 19, 20, 21, 22 ]
+        },
+        "row2": {
+          "direction": "input",
+          "bits": [ 23, 24, 25, 26, 27, 28, 29, 30 ]
+        },
+        "row3": {
+          "direction": "input",
+          "bits": [ 31, 32, 33, 34, 35, 36, 37, 38 ]
+        },
+        "q0": {
+          "direction": "output",
+          "bits": [ 39 ]
+        },
+        "q1": {
+          "direction": "output",
+          "bits": [ 40 ]
+        },
+        "q2": {
+          "direction": "output",
+          "bits": [ 41 ]
+        },
+        "q3": {
+          "direction": "output",
+          "bits": [ 42 ]
+        },
+        "block_SB": {
+          "direction": "output",
+          "bits": [ 43 ]
+        }
+      },
+      "cells": {
+        "$shiftx$/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:70$2": {
+          "hide_name": 1,
+          "type": "$shiftx",
+          "parameters": {
+            "A_SIGNED": 0,
+            "A_WIDTH": 8,
+            "B_SIGNED": 0,
+            "B_WIDTH": 3,
+            "Y_WIDTH": 1
+          },
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:70.21-70.29"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 7, 8, 9, 10, 11, 12, 13, 14 ],
+            "B": [ 2, 3, 44 ],
+            "Y": [ 39 ]
+          }
+        },
+        "$shiftx$/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:71$3": {
+          "hide_name": 1,
+          "type": "$shiftx",
+          "parameters": {
+            "A_SIGNED": 0,
+            "A_WIDTH": 8,
+            "B_SIGNED": 0,
+            "B_WIDTH": 3,
+            "Y_WIDTH": 1
+          },
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:71.21-71.29"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 15, 16, 17, 18, 19, 20, 21, 22 ],
+            "B": [ 2, 3, 44 ],
+            "Y": [ 40 ]
+          }
+        },
+        "$shiftx$/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:72$4": {
+          "hide_name": 1,
+          "type": "$shiftx",
+          "parameters": {
+            "A_SIGNED": 0,
+            "A_WIDTH": 8,
+            "B_SIGNED": 0,
+            "B_WIDTH": 3,
+            "Y_WIDTH": 1
+          },
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:72.21-72.29"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 23, 24, 25, 26, 27, 28, 29, 30 ],
+            "B": [ 2, 3, 4 ],
+            "Y": [ 41 ]
+          }
+        },
+        "$shiftx$/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:73$5": {
+          "hide_name": 1,
+          "type": "$shiftx",
+          "parameters": {
+            "A_SIGNED": 0,
+            "A_WIDTH": 8,
+            "B_SIGNED": 0,
+            "B_WIDTH": 3,
+            "Y_WIDTH": 1
+          },
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:73.21-73.29"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 31, 32, 33, 34, 35, 36, 37, 38 ],
+            "B": [ 2, 3, 4 ],
+            "Y": [ 42 ]
+          }
+        },
+        "$ternary$/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:62$1": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": 1
+          },
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:62.17-62.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 5 ],
+            "S": [ 6 ],
+            "Y": [ 44 ]
+          }
+        },
+        "$ternary$/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:75$6": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": 1
+          },
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:75.23-75.38"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ "1" ],
+            "S": [ 6 ],
+            "Y": [ 43 ]
+          }
+        }
+      },
+      "netnames": {
+        "$shiftx$/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:70$2_Y": {
+          "hide_name": 1,
+          "bits": [ 39 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:70.21-70.29"
+          }
+        },
+        "$shiftx$/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:71$3_Y": {
+          "hide_name": 1,
+          "bits": [ 40 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:71.21-71.29"
+          }
+        },
+        "$shiftx$/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:72$4_Y": {
+          "hide_name": 1,
+          "bits": [ 41 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:72.21-72.29"
+          }
+        },
+        "$shiftx$/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:73$5_Y": {
+          "hide_name": 1,
+          "bits": [ 42 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:73.21-73.29"
+          }
+        },
+        "$ternary$/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:62$1_Y": {
+          "hide_name": 1,
+          "bits": [ 44 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:62.17-62.30"
+          }
+        },
+        "$ternary$/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:75$6_Y": {
+          "hide_name": 1,
+          "bits": [ 43 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:75.23-75.38"
+          }
+        },
+        "A0": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:17.23-17.25"
+          }
+        },
+        "A1": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:18.23-18.25"
+          }
+        },
+        "A2": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:19.23-19.25"
+          }
+        },
+        "SB": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:21.23-21.25"
+          }
+        },
+        "SF": {
+          "hide_name": 0,
+          "bits": [ 44 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:61.10-61.12"
+          }
+        },
+        "addr01": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 44 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:64.16-64.22"
+          }
+        },
+        "addr23": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:65.16-65.22"
+          }
+        },
+        "block_SB": {
+          "hide_name": 0,
+          "bits": [ 43 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:39.23-39.31"
+          }
+        },
+        "q0": {
+          "hide_name": 0,
+          "bits": [ 39 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:32.23-32.25"
+          }
+        },
+        "q1": {
+          "hide_name": 0,
+          "bits": [ 40 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:33.23-33.25"
+          }
+        },
+        "q2": {
+          "hide_name": 0,
+          "bits": [ 41 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:34.23-34.25"
+          }
+        },
+        "q3": {
+          "hide_name": 0,
+          "bits": [ 42 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:35.23-35.25"
+          }
+        },
+        "row0": {
+          "hide_name": 0,
+          "bits": [ 7, 8, 9, 10, 11, 12, 13, 14 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:26.23-26.27"
+          }
+        },
+        "row1": {
+          "hide_name": 0,
+          "bits": [ 15, 16, 17, 18, 19, 20, 21, 22 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:27.23-27.27"
+          }
+        },
+        "row2": {
+          "hide_name": 0,
+          "bits": [ 23, 24, 25, 26, 27, 28, 29, 30 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:28.23-28.27"
+          }
+        },
+        "row3": {
+          "hide_name": 0,
+          "bits": [ 31, 32, 33, 34, 35, 36, 37, 38 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:29.23-29.27"
+          }
+        },
+        "sad": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:23.23-23.26"
+          }
+        }
+      }
+    },
+    "mux21": {
+      "attributes": {
+        "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:101.1-110.10"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "B": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "S": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "Y": {
+          "direction": "output",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+        "$ternary$/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:108$8": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": 1
+          },
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:108.16-108.25"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "S": [ 4 ],
+            "Y": [ 5 ]
+          }
+        }
+      },
+      "netnames": {
+        "$ternary$/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:108$8_Y": {
+          "hide_name": 1,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:108.16-108.25"
+          }
+        },
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:102.17-102.18"
+          }
+        },
+        "B": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:103.17-103.18"
+          }
+        },
+        "S": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:104.17-104.18"
+          }
+        },
+        "Y": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:105.17-105.18"
+          }
+        }
+      }
+    },
+    "sync_ff": {
+      "attributes": {
+        "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:80.1-99.10"
+      },
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "rst": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "rst_value": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "en": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "D": {
+          "direction": "input",
+          "bits": [ 6 ]
+        },
+        "Q": {
+          "direction": "output",
+          "bits": [ 7 ]
+        }
+      },
+      "cells": {
+        "$procdff$15": {
+          "hide_name": 1,
+          "type": "$dff",
+          "parameters": {
+            "CLK_POLARITY": 1,
+            "WIDTH": 1
+          },
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:89.5-97.8"
+          },
+          "port_directions": {
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "CLK": [ 2 ],
+            "D": [ 8 ],
+            "Q": [ 7 ]
+          }
+        },
+        "$procmux$10": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": 1
+          },
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:93.17-93.19|/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:93.13-95.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 7 ],
+            "B": [ 6 ],
+            "S": [ 5 ],
+            "Y": [ 9 ]
+          }
+        },
+        "$procmux$13": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": 1
+          },
+          "attributes": {
+            "full_case": 1,
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:90.13-90.16|/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:90.9-96.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9 ],
+            "B": [ 4 ],
+            "S": [ 3 ],
+            "Y": [ 8 ]
+          }
+        }
+      },
+      "netnames": {
+        "$0\\Q[0:0]": {
+          "hide_name": 1,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:89.5-97.8"
+          }
+        },
+        "$procmux$10_Y": {
+          "hide_name": 1,
+          "bits": [ 9 ],
+          "attributes": {
+          }
+        },
+        "$procmux$11_CMP": {
+          "hide_name": 1,
+          "bits": [ 5 ],
+          "attributes": {
+          }
+        },
+        "$procmux$13_Y": {
+          "hide_name": 1,
+          "bits": [ 8 ],
+          "attributes": {
+          }
+        },
+        "$procmux$14_CMP": {
+          "hide_name": 1,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "D": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:85.17-85.18"
+          }
+        },
+        "Q": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:86.17-86.18"
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:81.17-81.20"
+          }
+        },
+        "en": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:84.17-84.19"
+          }
+        },
+        "rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:82.17-82.20"
+          }
+        },
+        "rst_value": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:83.17-83.26"
+          }
+        }
+      }
+    },
+    "xor21": {
+      "attributes": {
+        "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:112.1-120.10"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "B": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "Y": {
+          "direction": "output",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+        "$xor$/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:118$9": {
+          "hide_name": 1,
+          "type": "$xor",
+          "parameters": {
+            "A_SIGNED": 0,
+            "A_WIDTH": 1,
+            "B_SIGNED": 0,
+            "B_WIDTH": 1,
+            "Y_WIDTH": 1
+          },
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:118.16-118.21"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 4 ]
+          }
+        }
+      },
+      "netnames": {
+        "$xor$/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:118$9_Y": {
+          "hide_name": 1,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:118.16-118.21"
+          }
+        },
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:113.17-113.18"
+          }
+        },
+        "B": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:114.17-114.18"
+          }
+        },
+        "Y": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "/home/hausding/Documents/FABulous/demo_FLUT51PSDM/Tile/FLUT51PSDM/FLUT51PSDM_architecture.v:115.17-115.18"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+# Qualified fill236_l2: 289.44 x 289.38 um.
+# Requires routing_audit/integration_fill236_l2/backend/run.py;
+# YAML alone does not enable muxcover/DSE or disable pin inflation.
+DIODE_ON_PORTS: out
+RUN_LINTER: false
+DIE_AREA:
+- 0
+- 0
+- 289
+- 289
+pdk::gf180mcuD:
+  DIE_AREA:
+  - 0
+  - 0
+  - 290
+  - 320
+DPL_CELL_PADDING: 0
+FABULOUS_DRT_TIMEOUT: 3600
+GPL_CELL_PADDING: 0
+SYNTH_STRATEGY: AREA 2
+PL_TARGET_DENSITY_PCT: 98
+PL_ROUTABILITY_DRIVEN: true

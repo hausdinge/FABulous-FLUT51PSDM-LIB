@@ -1,0 +1,17 @@
+TILE,FLUT51PSDM,,,,,#carry out,,,,,,,,,,,,
+# FLUT51PSDM_routing.csv preserves the exact NORTH/EAST/SOUTH/WEST interface from ../include/Base.csv.
+# Only the internal JUMP declarations differ; the carry connection is declared below.
+INCLUDE,../../common/FLUT51PSDM_routing.csv
+#direction,source_name,X-offset,Y-offset,destination_name,wires,,,,,,,,,,,,,
+NORTH,Co,0,-1,Ci,1,# carry,,,,,,,,,,,,
+BEL,../../common/FLUT51PSDM_architecture.v,LA_,,,,,,,,,,,,,,,,
+BEL,../../common/FLUT51PSDM_architecture.v,LB_,,,,,,,,,,,,,,,,
+BEL,../../common/FLUT51PSDM_architecture.v,LC_,,,,,,,,,,,,,,,,
+BEL,../../common/FLUT51PSDM_architecture.v,LD_,,,,,,,,,,,,,,,,
+BEL,../../common/FLUT51PSDM_architecture.v,LE_,,,,,,,,,,,,,,,,
+BEL,../../common/FLUT51PSDM_architecture.v,LF_,,,,,,,,,,,,,,,,
+BEL,../../common/FLUT51PSDM_architecture.v,LG_,,,,,,,,,,,,,,,,
+BEL,../../common/FLUT51PSDM_architecture.v,LH_,,,,,,,,,,,,,,,,
+BEL,../../common/MUX8LUT_frame_config_mux.v,,,,,,,,,,,,,,,,,
+MATRIX,./FLUT51PSDM_switch_matrix.list,,,,,,,,,,,,,,,,,
+EndTILE,,,,,,,,,,,,,,,,,,
