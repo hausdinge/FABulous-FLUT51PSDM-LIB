@@ -72,5 +72,6 @@ All variants currently declare the same tile name, **`FLUT51PSDM`**. Choose one
 variant for that tile type. To instantiate different variants in one fabric,
 first give them distinct tile/module names and regenerate their outputs.
 
-Preserve the relative paths when importing a variant. For example, starting with
-an existing FABulous project that does not already contain these directories:
+## Current Tile
+
+- b64mix_a48x16
