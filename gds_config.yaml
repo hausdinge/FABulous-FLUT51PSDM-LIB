@@ -1,0 +1,24 @@
+# Geometry and source selection for this tile, shared recipe is in Tile/include.
+
+pdk::ihp-sg13cmos5l:
+  DIE_AREA:
+  - 0
+  - 0
+  - 252.96
+  - 249.48
+  CORE_AREA:
+  - 3.84
+  - 3.78
+  - 249.12
+  - 245.7
+  LEFT_MARGIN_MULT: 0
+  RIGHT_MARGIN_MULT: 0
+  TOP_MARGIN_MULT: 0
+  BOTTOM_MARGIN_MULT: 0
+  VERILOG_FILES:
+  - dir::../../FLUT51PSDM.v
+  - dir::../../FLUT51PSDM_switch_matrix.v
+  - dir::../../FLUT51PSDM_ConfigMem.v
+  - dir::../../common/FLUT51PSDM_architecture.v
+  - dir::../../common/MUX8LUT_frame_config_mux.v
+  - dir::../../../../Fabric/models_pack.v
