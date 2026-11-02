@@ -67,10 +67,22 @@ module LUT_MEM_8x4 (
     assign addr01 = {SF, A1, A0};
     assign addr23 = {A2, A1, A0};
 
-    assign q0 = row0[addr01];
-    assign q1 = row1[addr01];
-    assign q2 = row2[addr23];
-    assign q3 = row3[addr23];
+    // ?: mux tree instead of row[addr]: same for 0/1, but like the real mux it yields
+    // a known value when an X select picks between equal bits (row[addr] is X).
+    function automatic mux8(input [7:0] r, input [2:0] a);
+        reg [3:0] l1;
+        reg [1:0] l2;
+        begin
+            l1   = a[0] ? {r[7], r[5], r[3], r[1]} : {r[6], r[4], r[2], r[0]};
+            l2   = a[1] ? {l1[3], l1[1]} : {l1[2], l1[0]};
+            mux8 = a[2] ? l2[1] : l2[0];
+        end
+    endfunction
+
+    assign q0 = mux8(row0, addr01);
+    assign q1 = mux8(row1, addr01);
+    assign q2 = mux8(row2, addr23);
+    assign q3 = mux8(row3, addr23);
 
     assign block_SB = sad ? 1'b1 : SB;
 
