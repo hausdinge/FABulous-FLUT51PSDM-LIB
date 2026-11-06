@@ -218,3 +218,12 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# FABulous outputs
+/FLUT51PSDM.v
+/FLUT51PSDM_switch_matrix.v
+/FLUT51PSDM_ConfigMem.v
+/FLUT51PSDM_ConfigMem.csv
+/FLUT51PSDM_io_pin_order.yaml
+/common/*.json
+/macro/
