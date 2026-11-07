@@ -4,17 +4,18 @@ pdk::ihp-sg13cmos5l:
   DIE_AREA:
   - 0
   - 0
-  - 252.96
-  - 249.48
-  CORE_AREA:
-  - 3.84
-  - 3.78
-  - 249.12
-  - 245.7
-  LEFT_MARGIN_MULT: 0
-  RIGHT_MARGIN_MULT: 0
-  TOP_MARGIN_MULT: 0
-  BOTTOM_MARGIN_MULT: 0
+  - 270.24
+  - 230.16
+  DIODE_ON_PORTS: "out"
+  RT_MAX_LAYER: TopMetal1
+  # No CTS, also not inside the TileAreaOptimisation loop.
+  RUN_CTS: false
+  FABULOUS_LOOP_SUBSTITUTE_STEPS:
+    OpenROAD.CTS: null
+  LEFT_MARGIN_MULT: 3
+  RIGHT_MARGIN_MULT: 3
+  TOP_MARGIN_MULT: 1
+  BOTTOM_MARGIN_MULT: 1
   VERILOG_FILES:
   - dir::../../FLUT51PSDM.v
   - dir::../../FLUT51PSDM_switch_matrix.v
